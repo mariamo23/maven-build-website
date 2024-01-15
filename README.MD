@@ -116,3 +116,18 @@ make sure to open port 8090 in your security group/firewall
 	<user username="tomcat" password="s3cret" roles="manager-gui, admin-gui"/>
    ```
 7. Restart serivce and try to login to tomcat application from the browser by clicking on the Manager app. This time it should be Successful
+
+ Here is the settings.xml file you put in the .m2 file
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <servers>
+        <server>
+            <id>TomcatServer</id>
+            <username>admin</username>
+            <password>admin</password>
+        </server>
+    </servers>
+</settings>
+``
+
